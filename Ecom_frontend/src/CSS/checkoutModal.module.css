@@ -1,0 +1,131 @@
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.modalContent {
+  background-color: white;
+  padding: 24px 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.closeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6B7280;
+  padding: 0;
+}
+.closeButton:hover {
+  color: #111827;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  
+  margin: 0 0 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.input:focus {
+  outline: none;
+  border-color: #2563EB;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.submitButton {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #111827;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 8px;
+}
+.submitButton:hover {
+  background-color: #374151;
+}
+
+.summaryText {
+  text-align: center;
+  font-size: 14px;
+  color: #6B7280;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+.summaryText p {
+  margin: 4px 0;
+}
+
+.errorText {
+  color: #EF4444;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+.successView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.successIcon {
+  color: #10B981;
+  margin-bottom: 16px;
+}
+.successView h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 8px;
+}
+.successView p {
+  font-size: 14px;
+  color: #4B5563;
+  margin: 0;
+}
+.successView .summaryText {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.successView .summaryText strong {
+  color: #111827;
+}

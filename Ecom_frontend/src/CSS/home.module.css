@@ -1,0 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.pageContainer {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F8F9FB;
+  min-height: 100vh;
+}
+
+.mainContent {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.productLayoutContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px; 
+  justify-content: center; 
+}
