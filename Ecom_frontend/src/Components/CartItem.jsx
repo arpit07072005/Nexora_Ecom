@@ -8,7 +8,7 @@ const CartItem = ({ item }) => {
 const navigate =useNavigate();
 const handledelete= async(id)=>{
 try {
-   await axios.delete(`http://localhost:4000/api/cart/${id}`);
+   await axios.delete(`https://nexora-ecom.onrender.com/api/cart/${id}`);
   console.log("deleted");
   toast.success("Item deleted");
   navigate(0);

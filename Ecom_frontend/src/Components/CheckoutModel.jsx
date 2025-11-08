@@ -22,7 +22,7 @@ const CheckoutModal = ({ isOpen, onClose, totalAmount }) => {
       return;
     }
     try {
-     const data= await axios.post('http://localhost:4000/api/checkout',formData);
+     const data= await axios.post('https://nexora-ecom.onrender.com/api/checkout',formData);
      console.log(data.data);
      setData(data.data);
      setIsOrderPlaced(true);

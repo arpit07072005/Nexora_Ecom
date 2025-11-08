@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/api/products");
+        const response = await axios.get("https://nexora-ecom.onrender.com/api/products");
         setProducts(response.data.data);
         setLoading(false);
       } catch (err) {

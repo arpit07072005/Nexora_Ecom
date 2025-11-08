@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
   const id = product._id;
 const handlecart= async (id)=>{
 try {
-   const response = await axios.post("http://localhost:4000/api/cart",{productId:id,quantity:1});
+   const response = await axios.post("https://nexora-ecom.onrender.com/api/cart",{productId:id,quantity:1});
    toast.success("Added to cart");
    console.log("cart is added",response.data);
 } catch (error) {

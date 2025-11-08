@@ -13,7 +13,7 @@ const CartPage = () => {
   useEffect(() => {
     const fetchCart = async () => {
       try {
-        const res = await axios.get('http://localhost:4000/api/cart');
+        const res = await axios.get('https://nexora-ecom.onrender.com/api/cart');
         setCartItems(res.data?.cart || []);
         setTotalAmount(res.data?.totalAmount || 0);
         console.log(res.data.cart);
